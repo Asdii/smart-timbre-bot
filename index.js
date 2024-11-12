@@ -1,3 +1,11 @@
+// Cargar las variables de entorno desde el archivo .env
+require('dotenv').config();
+
+// Acceder a la variable de entorno
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
+
+console.log(DISCORD_TOKEN);  // Para verificar que está funcionando
+
 // Importar las librerías necesarias
 const express = require('express');
 const { Client, GatewayIntentBits } = require('discord.js');
