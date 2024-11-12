@@ -58,4 +58,4 @@ app.listen(port, () => {
 });
 
 // Iniciar el bot de Discord
-client.login(process.env.discord-token);  // Sustituye 'TU_TOKEN_AQUI' por el token de tu bot
+client.login(process.env.token);
