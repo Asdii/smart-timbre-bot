@@ -9,7 +9,6 @@ console.log(DISCORD_TOKEN);  // Para verificar que está funcionando
 // Importar las librerías necesarias
 const express = require('express');
 const { Client, GatewayIntentBits } = require('discord.js');
-const config = require('./config.json');
 
 // Crear una instancia de express para el servidor HTTP
 const app = express();
@@ -67,4 +66,4 @@ app.listen(port, () => {
 });
 
 // Iniciar el bot de Discord
-client.login(config.token);  // Sustituye 'TU_TOKEN_AQUI' por el token de tu bot
+client.login(DISCORD_TOKEN);  // Sustituye 'TU_TOKEN_AQUI' por el token de tu bot
