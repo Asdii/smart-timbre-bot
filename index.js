@@ -4,7 +4,7 @@ const { Client, GatewayIntentBits } = require('discord.js');
 
 // Crear una instancia de express para el servidor HTTP
 const app = express();
-const port = 3000; // Puerto para escuchar las peticiones HTTP
+const port = process.env.PORT || 3000;
 
 // Crear un cliente de Discord
 const client = new Client({ 
